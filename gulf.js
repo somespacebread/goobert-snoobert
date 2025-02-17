@@ -217,7 +217,7 @@
 						labelBytes[americaStartIndex + i] = '\u200B'.charCodeAt(0)
 					}
 				} else {
-					// Replace "America" with "Mexico\u200B"
+					// Replace "America" with "Sweden\u200B"
 					for (let i = 0; i < REPLACEMENT_BYTES.length; i++) {
 						labelBytes[americaStartIndex + i] = REPLACEMENT_BYTES[i]
 					}
