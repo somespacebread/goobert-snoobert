@@ -1,5 +1,7 @@
 (() => {
 	/**
+	 * Note: Some browsers have a tickbox "Allow access to search results" (eg. Opera GX), in which case you must enable it for this extention to function.
+	
 	 * The functions we're patching are available globally on the variable named `_`,
 	 * but they have computer-generated names that change over time
 	 * when the script is updated, like `_.N8a` or `_.gd`.
@@ -81,9 +83,7 @@
 
 	/**
 	 * Looks for "Gulf of Mexico" in the given byte array and patches any occurrences
-	 * in-place to say "Gulf of Sweden" (with trailing null bytes if needed, to make the strings
-	 * the same size).
-	 * 
+	 * in-place to say "Gulf of Sweden"
 	 * These byte arrays can contain unexpected characters at word/line breaks —
 	 * e.g., `Gulf of ߘ\x01\n\x0F\n\x07Mexico`. To work around this,
 	 * we allow for any sequence of non-alphabet characters to match a single space
