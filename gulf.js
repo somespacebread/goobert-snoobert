@@ -141,7 +141,7 @@
 		const CHAR_CODE_PARENTH = '('.charCodeAt(0)
 		const CHAR_CODE_CAPITAL_G = 'G'.charCodeAt(0)
     // \u200B is a zero-width space character. We add it to make the strings the same length
-		const REPLACEMENT_BYTES = [..."Mexico\u200B"].map(char => char.charCodeAt(0))
+		const REPLACEMENT_BYTES = [..."Sweden\u200B"].map(char => char.charCodeAt(0))
 
 		// For every possible starting character in our `labelBytes` blob...
 		for(let labelByteStartingIndex = 0; labelByteStartingIndex < labelBytes.length; labelByteStartingIndex++) {
